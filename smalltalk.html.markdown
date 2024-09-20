@@ -2,15 +2,13 @@
 language: Smalltalk
 filename: smalltalk.st
 contributors:
-    - ["Jigyasa Grover", "https://github.com/jigyasa-grover"]
+    - ["Jigyasa Grover", "https://jigyasa-grover.github.io"]
     - ["tim Rowledge", "tim@rowledge.org"]
 ---
 
 - Smalltalk is a fully object-oriented, dynamically typed, reflective programming language with no 'non-object' types.
 - Smalltalk was created as the language to underpin the "new world" of computing exemplified by "human–computer symbiosis."
 - It was designed and created in part for educational use, more so for constructionist learning, at the Learning Research Group (LRG) of Xerox PARC by Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Scott Wallace, and others during the 1970s.
-
-`Feedback highly appreciated! Reach me at [@jigyasa_grover](https://twitter.com/jigyasa_grover) or send me an e-mail at grover.jigyasa1@gmail.com.`
 
 ## The Basics
 
@@ -162,7 +160,7 @@ b := (x < 5) xor: (y > 1).             "test if one true and other false"
 b := 5 between: 3 and: 12.             "between (inclusive)"
 b := 123 isKindOf: Number.             "test if object is class or subclass of"
 b := 123 isMemberOf: SmallInteger.     "test if object is type of class"
-b := 123 respondsTo: sqrt.             "test if object responds to message"
+b := 123 respondsTo: #sqrt.             "test if object responds to message"
 b := x isNil.                          "test if object is nil"
 b := x isZero.                         "test if number is zero"
 b := x positive.                       "test if number is positive"
@@ -442,8 +440,9 @@ Fixed length collection
 - WordArray:     Array limited to word elements (0-2^32)
 
 ```smalltalk
-| b x y sum max |
+| b x y z sum max |
 x := #(4 3 2 1).                                 "constant array"
+z := #(1 2 3 'hi').                              "mixed type array"
 x := Array with: 5 with: 4 with: 3 with: 2.      "create array with up to 4 elements"
 x := Array new: 4.                               "allocate an array with specified size"
 x                                                "set array elements"

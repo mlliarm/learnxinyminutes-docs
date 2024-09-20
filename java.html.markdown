@@ -91,6 +91,9 @@ public class LearnJava {
         int numInt = scanner.nextInt();
 
         // read long input
+        long numLong = scanner.nextLong();
+
+        // read float input
         float numFloat = scanner.nextFloat();
 
         // read double input
@@ -123,6 +126,9 @@ public class LearnJava {
         // <name1> = <name2> = <name3> = <val>
         int barInt1, barInt2, barInt3;
         barInt1 = barInt2 = barInt3 = 1;
+        // Shorthand for multiple declarations
+        int barInt4 = 1, barInt5 = 2; 
+
 
         /*
         *  Variable types
@@ -182,7 +188,7 @@ public class LearnJava {
         //
         // BigInteger is a data type that allows programmers to manipulate
         // integers longer than 64-bits. Integers are stored as an array of
-        // of bytes and are manipulated using functions built into BigInteger
+        // bytes and are manipulated using functions built into BigInteger
         //
         // BigInteger can be initialized using an array of bytes or a string.
         BigInteger fooBigInteger = new BigInteger(fooByteArray);
@@ -304,7 +310,7 @@ public class LearnJava {
         ///////////////////////////////////////
         System.out.println("\n->Operators");
 
-        int i1 = 1, i2 = 2; // Shorthand for multiple declarations
+        int i1 = 1, i2 = 2;
 
         // Arithmetic is straightforward
         System.out.println("1+2 = " + (i1 + i2)); // => 3
@@ -314,7 +320,7 @@ public class LearnJava {
         System.out.println("1/2.0 = " + (i1 / (double)i2)); // => 0.5
 
         // Modulo
-        System.out.println("11%3 = "+(11 % 3)); // => 2
+        System.out.println("11%3 = " + (11 % 3)); // => 2
 
         // Comparison operators
         System.out.println("3 == 2? " + (3 == 2)); // => false
@@ -368,7 +374,7 @@ public class LearnJava {
 
         // While loop
         int fooWhile = 0;
-        while(fooWhile < 100) {
+        while (fooWhile < 100) {
             System.out.println(fooWhile);
             // Increment the counter
             // Iterated 100 times, fooWhile 0,1,2...99
@@ -383,7 +389,7 @@ public class LearnJava {
             // Increment the counter
             // Iterated 100 times, fooDoWhile 0->99
             fooDoWhile++;
-        } while(fooDoWhile < 100);
+        } while (fooDoWhile < 100);
         System.out.println("fooDoWhile Value: " + fooDoWhile);
 
         // For Loop
@@ -537,7 +543,7 @@ public class LearnJava {
         // is called when the anonymous inner class is created.
         // This does not only work for Collections, it works for all
         // non-final classes.
-        
+
 
         // Another option was to initialize the Collection from an array,
         // using Arrays.asList() method:
@@ -920,7 +926,7 @@ import java.security.SecureRandom;
 public class Lambdas {
     public static void main(String[] args) {
         // Lambda declaration syntax:
-	// <zero or more parameters> -> <expression body or statement block>
+        // <zero or more parameters> -> <expression body or statement block>
 
         // We will use this hashmap in our examples below.
         Map<String, String> planets = new HashMap<>();
@@ -1006,45 +1012,32 @@ public class Lambdas {
 
 The links provided here below are just to get an understanding of the topic, feel free to Google and find specific examples.
 
-**Official Oracle Guides**:
+### Official Oracle Guides
 
 * [Java Tutorial Trail from Sun / Oracle](https://docs.oracle.com/javase/tutorial/index.html)
-
 * [Java Access level modifiers](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
-
 * [Object-Oriented Programming Concepts](https://docs.oracle.com/javase/tutorial/java/concepts/index.html):
     * [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
     * [Polymorphism](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
     * [Abstraction](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
-
 * [Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
-
 * [Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
-
 * [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
-
 * [Java Code Conventions](https://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
-
 * New features in Java 8:
     * [Lambda expressions (functional programming)](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
     * [Date and time API (java.time package)](http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html)
 
-**Online Practice and Tutorials**
+### Online Practice and Tutorials
 
 * [Learneroo.com - Learn Java](http://www.learneroo.com)
-
 * [Codingbat.com](http://codingbat.com/java)
-
 * [Codewars - Java Katas](https://www.codewars.com/?language=java)
-
 * [University of Helsinki - Object-Oriented programming with Java](http://moocfi.github.io/courses/2013/programming-part-1/)
 
-**Books**:
+### Books
 
 * [Head First Java](http://www.headfirstlabs.com/books/hfjava/)
-
-* [Thinking in Java](http://www.mindview.net/Books/TIJ/)
-
+* [Thinking in Java](https://www.amazon.com/Thinking-Java-4th-Bruce-Eckel/dp/0131872486/)
 * [Objects First with Java](https://www.amazon.com/Objects-First-Java-Practical-Introduction/dp/0132492660)
-
 * [Java The Complete Reference](https://www.amazon.com/gp/product/0071606300)
